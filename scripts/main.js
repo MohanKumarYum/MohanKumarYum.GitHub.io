@@ -4,8 +4,7 @@ myImage.onclick = function () {
     var mySrc = myImage.getAttribute('src');
     if (mySrc === '/images/mozilla-image2.png') {
         myImage.setAttribute('src', '/images/mozilla-image.jpg');
-    }
-    else {
+    } else {
         myImage.setAttribute('src', '/images/mozilla-image2.png');
     }
 }
@@ -21,13 +20,11 @@ function setUserName() {
 
 if (!localStorage.getItem('name')) {
     setUserName();
-}
-
-else {
+} else {
     var storeName = localStorage.getItem('name');
     myHeading.textContent = `Mozilla is cool, ${storeName}`;
 }
 
-myButton.onclick = function(){
+myButton.onclick = function () {
     setUserName();
 }
