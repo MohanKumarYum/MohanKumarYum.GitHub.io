@@ -1,40 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 
 <body>
-  <pre>
-    <code>
-      var para = document.querySelector('p');
-      para.onclick = function() {
-        alert('Owww, stop poking me!');
-      }
-      &lt;meta charset="UTF-8"&gt;
-      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-      &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
-      &lt;title&gt;Document&lt;/title&gt;
-    </code>  
-  </pre>
 
-  <p>You shouldn't use presentational elements like &lt;font&gt; and &lt;center&gt;.</p>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav>
 
-  <p>In the above JavaScript example, <var>para</var> represents a paragraph element.</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our team</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <form>
+            <input type="search" name="q" id="nav-search" placeholder="Search query">
+            <input type="submit" value="Go!">
+        </form>
+    </nav>
+    <main>
+
+        <article>
+            <h2>Article heading</h2>
+
+            <section>
+                <h3>Subsection</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero facere eligendi sit illum aspernatur
+                    corporis adipisci dolorem, dolorum, sunt maxime nam? Nam asperiores libero qui dolorem beatae
+                    quidem similique repellendus mollitia labore adipisci modi quibusdam, corrupti architecto eveniet
+                    quaerat consequatur accusamus culpa debitis? Quidem consequuntur iste dignissimos, nemo sit at?</p>
+            </section>
 
 
-  <p>Select all the text with <kbd> Ctrl</kbd>/ <kbd> Cmd </kbd> + <kbd> A</kbd>.</p>
+            <section>
+                <h3>Another Subsection</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero facere eligendi sit illum aspernatur
+                    corporis adipisci dolorem, dolorum, sunt maxime nam? Nam asperiores libero qui dolorem beatae
+                    quidem similique repellendus mollitia labore adipisci modi quibusdam, corrupti architecto eveniet
+                    quaerat consequatur accusamus culpa debitis? Quidem consequuntur iste dignissimos, nemo sit at?</p>
+            </section>
 
-  <pre> $ <kbd>ping mozilla.org</kbd>
- <samp>PING mozilla.org (63.245.215.20): 56 data bytes
- 64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+        </article>
 
-<time datetime="01-20">20 January</time>
+        <aside>
+            <h2>Related</h2>
 
+            <ul>
+                <li><a href="#">Oh I do like to be beside the seaside</a></li>
+                <li><a href="#">Oh I do like to be beside the sea</a></li>
+                <li><a href="#">Although in the North of England</a></li>
+                <li><a href="#">It never stops raining</a></li>
+                <li><a href="#">Oh well...</a></li>
+            </ul>
+        </aside>
+
+    </main>
+    <footer>
+        <p>&copy;Copyright 2050 by nobody. All rights reversed.</p>
+    </footer>
 </body>
 
 </html>
