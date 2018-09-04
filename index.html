@@ -9,16 +9,29 @@
 </head>
 
 <body>
-    <video controls width="400" height="400" muted poster="images/poster.png">
-        <source src="video/rabbit320.mp4" type="video/mp4">
-        <source src="video/rabbit320.webm" type="video/webm">
-        <p>Your browser doesn't support HTML5 video. Here is a <a href="video/rabbit320.mp4">link to the video</a> instead.</p>
-    </video>
-    <audio controls>
-        <source src="audio/viper.mp3" type="audio/mp3">
-        <source src="audio/viper.ogg" type="audio/ogg">
-        <p>Your browser doesn't support HTML5 video. Here is a <a href="audio/viper.mp3">link to the audio</a> instead.</p>
-    </audio>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rQA5YM9UDrg" frameborder="0" allow="autoplay; encrypted-media"
+        allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.934601754761!2d151.01664611574785!3d-33.81400072364934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12a313ef328e9b%3A0x4a9721231e08ef47!2s3+Broughton+St%2C+Parramatta+NSW+2150!5e0!3m2!1sen!2sau!4v1536051865545"
+        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    <iframe src="https://developer.mozilla.org/en-US/docs/Glossary" width="100%" height="500" frameborder="0" allowfullscreen
+        sandbox>
+        <p> <a href="https://developer.mozilla.org/en-US/docs/Glossary">
+                Fallback link for browsers that don't support iframes
+            </a> </p>
+    </iframe>
+
+    <h1>Embed element example</h1>
+
+    <!-- Flash obsolete not, used anymore. -->
+    <embed src="video/whoosh.swf" quality="medium" bgcolor="#ffffff" width="550" height="400" name="whoosh" align="middle" allowScriptAccess="sameDomain"
+        allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+
+    <object data="documents/mypdf.pdf" type="application/pdf" width="800" height="1200" typemustmatch>
+        <p>You don't have a plugin, but you can <a href="documents/mypdf.pdf" download="mypdf.pdf">download the PDF file.</a>
+            </p>
+    </object>
+
 </body>
 
 </html>
