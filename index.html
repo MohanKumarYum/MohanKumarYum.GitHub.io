@@ -5,47 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Not responsive demo</title>
+    <style>
+        html {
+            font-family: sans-serif;
+            background-color: gray;
+        }
+
+        body {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+        }
+
+        header {
+            background: url("images/header.jpg") no-repeat center;
+            height: 200px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        img {
+            /* width: 320px; */
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/rQA5YM9UDrg" frameborder="0" allow="autoplay; encrypted-media"
-        allowfullscreen></iframe>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.934601754761!2d151.01664611574785!3d-33.81400072364934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12a313ef328e9b%3A0x4a9721231e08ef47!2s3+Broughton+St%2C+Parramatta+NSW+2150!5e0!3m2!1sen!2sau!4v1536051865545"
-        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-    <iframe src="https://developer.mozilla.org/en-US/docs/Glossary" width="100%" height="500" frameborder="0" allowfullscreen
-        sandbox>
-        <p> <a href="https://developer.mozilla.org/en-US/docs/Glossary">
-                Fallback link for browsers that don't support iframes
-            </a> </p>
-    </iframe>
-
-    <h1>Embed element example</h1>
-
-    <!-- Flash obsolete not, used anymore. -->
-    <embed src="video/whoosh.swf" quality="medium" bgcolor="#ffffff" width="550" height="400" name="whoosh" align="middle" allowScriptAccess="sameDomain"
-        allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
-
-    <object data="documents/mypdf.pdf" type="application/pdf" width="800" height="1200" typemustmatch>
-        <p>You don't have a plugin, but you can <a href="documents/mypdf.pdf" download="mypdf.pdf">download the PDF file.</a>
-            </p>
-    </object>
-
-    <iframe src="triangle.svg" frameborder="0" width="200" height="200" sandbox="allow-same-origin">
-        <img src="triangle.png" alt="An equilateral triange with equal edges.">
-    </iframe>
-
-    <svg width="100%" height="100%">
-            <rect width="100%" height="100%" fill="red" />
-            <circle cx="100%" cy="100%" r="150" fill="blue" stroke="black" />
-            <polygon points="120,0 240,225 0,225" fill="green"/>
-            <text x="50" y="100" font-family="Verdana" font-size="55"
-                  fill="white" stroke="black" stroke-width="2">
-                    Hello!
-            </text>
-          </svg>
-
+    <header>
+    </header>
+    <Main>
+        <section>
+            <h1>My Website</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium expedita iusto dignissimos iure
+                laboriosam, maiores, perspiciatis temporibus autem quam impedit, dolor accusantium atque. Repellat
+                temporibus eos exercitationem itaque, quam delectus non doloribus aut voluptate deserunt sint illo
+                repellendus nostrum, perferendis quasi architecto vero iste, error minus eveniet. Sunt, velit
+                cupiditate!</p>
+            <picture>
+                <source media="(max-width: 799px)" srcset="images/elva-480w-close-portrait.jpg">
+                <source media="(min-width: 800px)" srcset="images/elva-800w.jpg">
+                <img src="images/elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
+            </picture>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, pariatur. Deleniti, velit. Quidem
+                dignissimos quos recusandae voluptatibus illo, voluptate architecto adipisci quo eius! Dicta assumenda
+                culpa amet tenetur omnis? Animi, aut facilis tempora amet culpa soluta sapiente. Perspiciatis
+                blanditiis
+                amet est? Est perferendis sunt repudiandae possimus placeat esse inventore iste!</p>
+            <!-- <img srcset="images/elva-fairy-320w.jpg 320w,
+                        images/elva-fairy-480w.jpg 480w,
+                        images/elva-fairy-800w.jpg 800w"
+                sizes="(max-width: 320px) 280px,
+                       (max-width: 480px) 440px,
+                       800px"
+                src="images/elva-fairy-800w.jpg" alt="Elva dressed as a fairy"> -->
+            <img src="images/elva-fairy-800w.jpg" alt="Elva dressed as a fairy" srcset="images/elva-fairy-320w.jpg, images/elva-fairy-480w.jpg 1.5x, images/elva-fairy-640w.jpg 2x">
+            <p>Header image originally by <a href="https://www.flickr.com/photos/miwok/17086751527/" title="Miwok Photos - Forest scenic landscape"></a>
+                Miwok</p>
+        </section>
+    </Main>
 </body>
 
 </html>
